@@ -19,9 +19,9 @@ async function setDatabaseConnction() {
     if (null === connection) {
         connection = await mysql.createConnection({
             host: 'ec2-54-190-162-245.us-west-2.compute.amazonaws.com',
-            user: 'CamMartinez',
+            user: 'admin',
             password: 'ica4jacksclass',
-            database: 'database-1.cn4u2eo0kw3d.us-west-2.rds.amazonaws.com'
+            database: 'mysql'
         });
     }
 }
